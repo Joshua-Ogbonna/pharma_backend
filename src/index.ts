@@ -74,6 +74,10 @@ const authenticateToken = (req: any, res: any, next: any) => {
   });
 };
 
+app.get("/", async (req, res) => {
+  res.json({message: "Hello world"})
+})
+
 // Routes
 app.post("/api/register", async (req, res) => {
   console.log("running");
