@@ -69,6 +69,9 @@ const authenticateToken = (req, res, next) => {
         next();
     });
 };
+app.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    res.json({ message: "Hello world" });
+}));
 // Routes
 app.post("/api/register", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("running");
